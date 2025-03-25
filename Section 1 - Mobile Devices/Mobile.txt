@@ -1,0 +1,16 @@
+- Todo: The rest of the notes Converted
+
+- Mobile Configurations:
+    - iCloud
+    - Can choose to customize and synchronize
+    - Can Synchronize multiple Data types (i.e mail, pictures, contacts)
+    - There's data caps and transfer Costs
+
+
+
+
+
+
+
+- Miscellaneous Terms:
+    - 

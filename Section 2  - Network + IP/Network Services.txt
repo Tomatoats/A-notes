@@ -1,0 +1,86 @@
+Network Services : Servers and other things we might find in a network rack needed to make things works
+ 
+  - DNS Server
+    - Domain Name System: Converts names to IP Addresses and Vice Versa
+    - Distributed Naming System : load is balanced across different Servers
+    - Usually managed byt he ISp or enterprise IT Department, it's a critical resource
+
+  - DHCP : Dynamic Host Configuration protocol
+    - Automatic IP adress Configuration
+    - very common service, available on most home routers
+    - Enterprise DHCP will be redundant, usually running on central Servers
+  
+  - File Server
+    - Centrralized storage of files, a fileshare.
+    - uses protocols such as SMB (Server message Block) or AFP (Apple Filing Protocol) to manage files
+    - Front end hides the  protocol
+  
+  - Print Server
+    - Connects a printer to the network so that the printer can provide service to all network devices
+    - May be software in a computer, so everyone sends to the computer and then computer sends to printer
+    - may be built in to the printer using network adapters and software
+    - Uses Standard Printing protocols: SMB , IPP (Internet Printing Protocol), LPD (Line Printer Daemon)
+
+  - Mail Servser
+    - Store incoming and sends outgoign mail
+    - Usually managed by the ISP or enterprise IT department, with a complex set of requirements
+    - because it's one of trhe most important services, usually 24x7 support in case it goes awry
+  
+  - Syslog:
+    - allows us to consolidate all the logs from these other servers
+    - Usually intergrated into a SIEM
+    - needs a large large file space
+
+  - Web Server:
+    - Responds to browser requests using standard web browsing protocols like Http, https
+    - Web pages are stored on the server and then downloaded to the browser
+    - could dynamically build the page then send to a browser, or send the static
+
+  - Authentication server
+    - Centralizes management : login 
+    - Not required on a home network 
+    - Usually a very critical resource so there's many servers for redundancy
+    
+  - Spam gateway
+    - Can send spam to the gateway before it hits the actual internalized mail server
+    - On site or cloud based
+
+  - Next Gen  Firewall
+    - sometimes called Unified Threat Management (UTM) or Web security Gateway
+    - Can have URL Filter / content inspection
+    - Malware inspection, spam filter
+    - CSU / DSU Capabilites (allow you to connect to WAN's)
+    - Can be router, switch, firewall, bandwidth shaper
+    - also intrusion detection systems (IDS) or Intrustion Prevention systems
+    - Can also be used a VPN Endpoint
+
+  - Load Balancers
+    - Distribute the load between multiple servers without the end user knowing
+    - Fault Tolerant , server outages have no efficient
+    - Can Configure load and has TCP Offload
+    - Can also have SSL Offload
+    - also can cach for fast response
+    - Can do Prioritzation for QOS
+    - as well as content switching
+
+  - Proxy Servers
+    - an intermediate server
+    - client makes a request to proxy, proxy performs request, then proxy provides result to client
+    - can filter URL, scan content, cache, and perform access control
+    
+  - SCADA / ICS: Supervisory Control and Data Aquition System
+    - Large-scale multisite Industrial Control Systems (ICS)
+    - PC Manages Equipment of large scale faculties (Power Generation, refinery, manufacturing) 
+    - Takes care of facilites, industrial, energy, and logistics
+    - Scada helps us distrubte control systems in real time
+    - Requires Extensive segmentation from the network and no access from the outside
+    
+  - Legacy and Embedded Systems
+    - another expression for really old, but could be really important
+    - Embedded systems : Purpose-built device
+    - these embedded systems for an alarm system, door security, or time card system might no have a way to access OS
+    
+  - Iot (Internet of Things)
+    - Appliances connect to wireless networks
+    - such as refrigerators, smart decvies, air control with thermostats, smart doorbells, etc
+    - may be on a seperate network to limit security breaches

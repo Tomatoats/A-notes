@@ -1,0 +1,90 @@
+Network Devices: 
+ - Routers: Route's traffic between IP Subnets, and makes forwarding decision based on IP
+   - Some switches have routers in them, sometimes called a layer 3 switch (routers are layer 3)
+   - Connects different network types such as LAN, WAN, copper, fiber
+
+ - Switches : forwards traffic based on data link address (MAC)
+   - Many Ports and Featgyres , some have Power over Ethernet
+   - The Bridging is done in hardware using Application-specific integrated circuit
+   - Multilayer switches are those with routing functionality
+   - Unmanaged switches are plug and play, fixed configuration so no VLAN
+   - also no manangement protocols (i.e SNMP)
+   - Managed switches (think the Aruba) - have VLAN support and traffic prioritization
+   - To have Redundancy support, they use Spanning Tree Protocol (STP)
+   - Also has port mirroring (to capture packets) and External Management (SNMP)
+
+ - Access Point: A bridge that extends the wired network onto the wireless network
+   - makes forwarding decisions based on MAC Address (just like a switch)
+
+ - Firewalls; Filters traffic by port number (OSI Layer 4 (TCP/UDP))
+   - Can encrypt traffic into / out of the network to protect traffic between switches
+   - can proxy traffic, and most firewalls  can be routers / layer 3 devices
+   - if they can filter traffic based on application, they're also a layer 7 firewall
+
+ - Power Over Ethernet (PoE): Power provided on an Ethernet Cable
+   - Useful for cameras, wireless access points, and other IoT devices
+   - The Power can either be provided by the switch (EndSpans) or in line power injector (midspan)
+   - the PoE switches will be commonly marked
+   - Three Specifications:
+      - PoE : IEEE 802.3af-2003
+        - Original PoE Specification, rolled into 802.3 standard
+        - 15.4 watts DC power, 350 mA max current
+    
+      - PoE+ : IEE 802.3at-2009
+        - Now also part of the 802.3 standard
+        - 25.5 watts DC Power, 600 mA max current
+
+      - PoE++ : IEEE 802.3bt-2018
+        - Type 3: 51 Watts DC Power, 600 mA max current
+        - Type 4: 71.3 Watts, 960 mA max current
+        - PoE with 10GBASE-T (10 gigabit per second)
+
+ - Hub : Multi-port repeater
+   - Old, typoically we use switches now , as hubs repeat traffic from one port to all Ports
+   - everything is half duplex, and becomes less efficient as network traffic increases
+   - 10 megabit / 100 megabit connections, difficult to find today
+
+ - Different Modems: 
+  - Cable Modem : Uses Broadband, transmission across multiple frequencies on a single wired
+    - Uses that Coax cable, data on cable network = DOCSIS (data over cable service interface specification)
+    - Can go up to 1 gigabit/s, and can do multiple services such as data, voice, video
+
+  - DSL Modem : ADSL (Asymmetric Digital Subscriber Line) - uses telephone lines
+    - Download speed is faster than upload speed (Asymmetric)
+    - 10,000 foot limitation from the central office (CO), faster speeds may be possible if closer to CO
+    - 52 Mbit/s downstream / 16 Mbit/s upstream are commonly
+
+  - ONT : Optical network terminal (Fiber) 
+    - Connects the ISP Fiber network to the copper Ethernet network 
+    - There's a Demarcation point (demarc) on the outside where fiber connects to turn into copper
+    - terminal box on the side of the building to do that. one side of box you're responsible for (the copper)
+    - and the other side , the fiber side, the ISP is respoinsible for
+
+ - Network Interface Card (NIC) : every device on the network has a NIC
+   - used on anything from Computers to routers.
+   - There's specific ones for each network type like ethernet, wan, wireless, etc
+   - Often built in to the motherboard or added as an expansion card
+
+
+
+
+Cable Infrastruture: Usually a ethernet into a patch run (patch run permamnent)
+ - the patch cable goes to patch panel, which then has an rj45 (ethernet) connector Header
+ - then that ethernet goes to a switch, that way people in an office can be connected without complication
+
+Software Defined Networking:
+ - Networking Devices have different functional planes of operation
+ - these change physical things like switches and split to logical units we can create in the cloud
+    
+    - Infrastrure Layer / Data Plane 
+      - Process the network frame and packets, takes care of forwarding, trunking, encrypting, NAT
+      - Network Traffic happens through this layer
+
+    - Control Layer / Control Plane
+      - Manages actions of the data plane, i.e routing tables, session tables, NAT tables. 
+      - Dynamic Routing protocol updates through this layer
+
+    - Application Layer / Management Plane
+      - Allows us to Configure and manage the Device, typically through SSH, Browser, or API's
+      
+  - Allows Us to manage and turn these systems online into the cloud

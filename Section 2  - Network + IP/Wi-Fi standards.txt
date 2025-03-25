@@ -1,0 +1,88 @@
+Wireless Standards (Wi-Fi):
+  - Wireless Networking uses 802.11 standards, managed by the IEEE LAN/MAN Standards Committee (IEEE 802)
+  - There's been many updates over time , check IEEE for the latest, but a brief history
+  - Wi-Fi has been trademarked, and the Wi-fi Alliance handles interoperability testing
+  - Wi-fi usually calls the new standard a new name (such as wi-fi 7), so you don't have to remember the letter
+  
+
+  - 802.11a
+    - October 1999, one of the original wireleess standards
+    - Operates in 5 GHz range, or other frequencies with special licensing
+    - 54 megabits per second (Mbit/s)
+    - Smaller range than 802.11b, cause the higher frequency is absorbed by objects in the way
+  
+  - 802.11b
+    - October 1999, the other original 802.11 standard
+    - Operates at 2.4 Ghz range
+    - 11 Mbit/s 
+    - Better range than 802.11a due to less absorption problem
+    - 2.4 ghz have more frequency conflicts because bluetooth, microwave ovens, cordless phones, etc use 2.4
+
+  - 802.11g
+    - June 2003
+    - 2.4 Ghz
+    - 54 Mbit/s 
+    - Backwards compatible with 802.11b
+
+  - 802.11n (Wifi 4)
+    - October 2009
+    - Operates at both 5 ghz and 2.4 ghz
+    - 40 Mhz Channel widths (more bandwidth)
+    - Could go up 600 Mbit/s (with 40 Mhz Mode and 4 antennnas)
+    - uses MIMO (Multiple input- multiple output) : could have multple transmit and receive antennnas
+
+  - 802.11ac (Wifi 5)
+    - January 2014
+    - 5ghz
+    - up to 160 Mhz (more bandwidth), increased channel bonding
+    - denser Signaling Modulation (faster data transfers)
+    - Eight MU-MIMO Downlink streams (twice as many as Wifi-4) (Multi user MIMO)
+    - Up to 7Gbit/s
+
+  - 802.11ax (wifi 6)
+    - February 2021
+    - 5ghz and/or 2 ghz
+    - 1.2 ghz/s/c (per second per channel), theorhetically up to 9.6 Ghz if you use every channel at once
+    - eight bi directional MU-MIMO streams
+    - Orthogonal Frequency-division multiple access (OFDMA) - Improves High Density installations
+    - Works similar to cellular communication
+
+  -            Frequencies        Max MIMO Streams     Output/stream  Total Output
+    --------------------------------------------------------------------------------
+   802.11a  |      5 Ghz       |        N/A          |   54 Mbit/s   |  54 Mbit/s
+   802.11b  |     2.4 Ghz      |        N/A          |   11 Mbit/s   |  11 Mbit/s
+   802.11g  |     2.4 Ghz      |        N/A          |   54 Mbit/s   |  54 Mbit/s
+   802.11n  | 5 Ghz / 2.4 Ghz  |      4 x MIMO       |  150 Mbit/s   | 600 Mbit/s
+   802.11ac | 5 Ghz            |   8 x DL MU-MIMO    |  867 Mbit/s   | 6.9 Gbit/s
+   802.11ax | 5 Ghz / 2.4 Ghz  | 8 x DL & UL MU-MIMO |  1.2 Gbit/s   | 9.6 Gbit/s
+
+  - Wireless access points have a range of 40-50 meters
+  - To connect two buildings located miles from each other, use fixed directional attennas
+  - Keep them outdoors to minimize signal absorption or bounce, and increase signal strength
+  - Wireless regulations are complex so refer to your country's regulatory policy
+  - check other frequencies, additional frequencies and licensing may be required
+  - Signal strength are dependant and regulated for indoor / outdoor use
+  - Outdoor antenna installation is dificult, so it usually is installed and set up by experts
+
+  - RFID: Radio-frequency identification
+    - It's everywhere : access badges, inventory/assembling line tracking
+    - pet/animal identification, or anything to be tracked
+    - if cylindrical, around the same size as grain of rice: if flat, typically smaller than a key from a keyboard
+    - Uses Same technology as radar: Radioenergy is transmitted to the tag, 
+    - radio frequencies power the tag, and the ID is transmitted Backwards
+    - bidirectional communication
+    - Some tag formats can be active / powered 
+
+  - NFC: Near field communication
+    - Two way wireless communication, built on RFID which is mostly one-way
+    - Used in payment systems (think apple pay, or tapping card)
+    - NFC can also help with bluetooth pairing, bootstrapped on
+    - Can also be used as an access token or identity card similar to access badge
+    - this is because it's short range with encryption support
+
+  - Channels: the IEEE Named channels for different groups of frequencies
+    - Non overlapping channels would be ideal
+    - 2.4 Ghz use IEEE Channel 1,6,11 at 20Mhz from 2412 Mhz through 2482Mhz
+    - There are plenty other Channels for 5 Ghz
+    - Bluetooth uses 2.4 Ghz Ranged that uses Unliscened ISM (industrial, scientific, and medical)
+    - Bluetooth can go up to 10 Meters, but there are industrial bluetooth that go up to 100 meters

@@ -1,0 +1,33 @@
+Port Numbers:
+ - Having well known port numbers is good for firewall rules and how it works
+ - FTP: File Transfer Protocol: Uses tcp/20 and tcp/21 (though usually needs authentication)
+ - SSH: Secure Shell: uses tcp/22 - looks and act the same as telnet
+ - Telnet : telecommunication network : uses tcp/23 (like SSH but unencrypted)
+ - SMTP  : Simple Mail Transfer Protocol : tcp/25 : used to send mail to server ( pop3 & iMAPis used to recieve)
+ - DNS: Domain Name System : udp/53 - very critical resource to convert URL's to IP addresses
+
+ - DHCP: Dynamic Host Configuration Protocol : udp/67, udp/68 - requires a DHCP Server - autoconfigs IP +more
+   - these DHCP's are dymanic / pooled and IP addresses are assigned in real time, using leases
+   - network Admins can make it so IP's can be reserved by MAC Addresses so they have the same IP
+ - HTTP : Hypertext Transfer Protocol : communication for browser and other applications : tcp/80
+ - HTTPS: same but secure / encrypted : tcp/443
+ - POP3 - Post office Protocol version 3 : tcp/110 - mail transfer functionality
+ - IMAP4 - internet Message Access Protocol v4 : tcp/143  - management of email inbox from multiple clients
+
+ - SMB : Server Message Block - protocol used my windows (also CIFS) - for file sharing, printer sharing
+   - uses NetBIOS over TCP/IP (network) Basic Input/Output System : udp/137 for netBios name service
+   - and tcp/139 for netbios session service
+   - Direct over tcp/445
+
+ - SNMP - Simple Network Management Protocol : gather stats from network devices
+   - Queires: udp/161 , Traps : udp /162
+   - v1 info is in the clear
+   - v2 is inclear but bulk transfer
+   - v3 finally had Encryption, authentication, and integrity
+
+ - LDAP : Lightweight Directory Access Protocol : tcp/389
+   - Stores and retrieves info in a network directory, commmonly used in microsoft active directory
+
+ - RDP : Remote Desktop Protocol : tcp/3389 
+   - remote desktop services on many windows versions , 
+   - there's clients for any other applications /OS's  for Windows RDP

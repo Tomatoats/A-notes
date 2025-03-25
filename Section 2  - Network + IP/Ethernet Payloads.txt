@@ -1,0 +1,50 @@
+
+Ethernet Payload
+ - Each Packet has:
+    -  Payload: Ethernet Header, IP, Protocol (TCP,UDP), Data (i.e VoiP or HTTP), Trailer
+    - IP i.E Source IP 10.0.0.1 Dest IP = 10.0.0.2
+    - Protocol i.E TCP Source Port = 3000 TCP Dest Port = 80
+    - Data i.E Voip Data, HTTP Data
+ - TCP and UDP are transported / Encapsulated IP Protocol
+ - Is also at the OSI Layer 4, transport Layer
+ - Multiplexing options if using TCP and UDP, able to use many applications at the same time
+ - Payload: Ethernet Header, IP, Protocol (TCP,UDP), Data (i.e VoiP or HTTP), Trailer
+
+TCP: Transmission Control Protocol: 
+ - Connection-oriented, has a formal connection to setup and close
+ - It is considered Reliable delivery due to recover from errors and can manage Out-of-order messages
+ - Flow Control, reciever can manage how much data is sent
+ - Communication-Oriented protocols that prefer a 'return receipt' prefer TCP
+ - these will be stuff like HTTPS or SSH
+ - TCP Handles all communication overhead, so application doesn't worry about out of order frames or data
+
+
+UDP : User Datagram Protocol:
+ - Connectionless, no formal open or close
+ - Unreliable, no error recover or reordering of data
+ - no flow control, sender can determine hhow much data is sent
+ - UDP allows Real time communication - no way to stop and resend
+ - DHCP and TFTP are connectionless protocols
+ - thus, data might not get through , application keeps track and decides what to do 
+
+
+IP: each packet goes from one IP to another
+ - Port Numbers let packets know which Port it should arrive
+ - IPv4 Sockets Need: Server IP Address, protocol, and server application port Numbers
+ - and Client IP address, protocol, client port Numbers
+ - Some Port numbers are permanent (non-ephememeral  i.e Port 80 goes for HTTPS, and typicially between 0-1023 )
+ - Other Port Numbers are temporary (ephememeral i.e Port 1024-65535 are determined by client)
+ - TCP and UDP can use any port
+ - Most Servers use non-epheremeral (permanent) port numbers
+ - Port Numbers are for communication, not security
+ - Thus those service port numbers need to be well known
+ - TCP port numbers aren't the same as UDP port number (in theory, there can be UDP and TCP both on port 80)
+ 
+
+- Miscellaneous Terms:
+    - DHCP : Dynamic Host Configuration Protocol
+    - TFTP : Trivial File Transfer Protocol
+    - HTTPS : Hypertext Transfer Protocol Secure
+    - SSH : Secure Shell
+    - SNMP : Simple Network Management Protocol
+    - NAT : Network Address translation - a method to map IP addresses to conserve global address space
