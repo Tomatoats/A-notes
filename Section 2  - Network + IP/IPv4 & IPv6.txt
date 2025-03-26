@@ -1,0 +1,47 @@
+IP Addressing
+ - IPv4 is the primary protocol for everything we do, reflected and included in almost all configs
+ - IPv6 is now part of all major OS's, and backbone of our internet infrastructure
+ - Every device on your network needs a unique IP address
+ - also needs a subnet mask to every device. i.e 255.255.255.0
+ - Used by the local device to determine what subnet it's on, usually isn't transmitted accross the network
+ - also typically need to route a local gateway to the router if you want outside communication, typically 192.168.1.1
+ - default gateway must be an IP address on the local subnet
+ -  DNS Services turns URL's to IP addresses
+ - can configure DNS servers in your OS's, you'll typically need at least 2 DNS servers in your ip config
+
+    - IPV4 = 192.168.1.131. Split to 4 octets, or 4 bytes, or 32 bits. each . is 8 bit
+
+
+    - IPv6 : 128 bit addresses, split into 8 groups of 2 bytes/octets. Usually in hex notation 
+        - I.e fe80::5d18:652:cffd:8f52 which expands to fe80:0000:0000:0000:5d18:0652:cffd:8f52
+        - can do the double colon to skip groups all 0, and can also skip leading 0 in short notation
+        - 340 undecillion possibilities, so 6.8 bill people could have 5,000,000,000,000,000,000,000,000,000 addresses each
+        - long number, so DNS is very important to keep these routed where they need to be. 
+        - first 64 bits is  generally the network prefix (/64) and last 64 bits the host network address
+
+Assigning IP Addresses (DHCP  / APIPA)
+ - IPv4 address configs used to be manual, but now we use DHCP
+ - DHCP = Dynamic Host Configuration Protocol
+ - BOOTP was made in 1993 - bootstrap protocol, but didn't auto define everything
+ - So we made DHCP in 1997
+ - DHCP has a DORA Process, 4 steps
+    - Discover, find's a DHCP Servcer
+        - Client Broadcast to udp/67 sent to switch -> DHCP  , switch -> Router with DHCP Relay -> its own DHCP Server
+    - Offer : Get an Offer
+        - the two DHCP servers send broadcasts to udp/68 back to client workstation, will decide an offer
+    - Requests: Lock in the Offer
+        - Client Broadcasts over udp/67 where the client locks in the the offer they want to the DHCP
+    - Acknowledge: DHCP Server confirmation
+        - DHCP over udp/68 where it's been acknowledged and sends the config needed to the client for the IP
+ - DHCP assigns an IP address from the first available from the Pool, called Address Pool
+ - However you can make an IP Address static if you want  by configuring a reservation on the DHCP server
+ - so it associates a specific mac address with the same address
+ - avoid manual configs if possible, use IP reservation via DHCP
+ 
+ - APIPA: Automatic Private IP Addressing 
+    - aka A link-local address
+    - Can't communicate outside of local network, no forwarding by routers
+    - reserved from 169.254.1.0 -> 169.254.254.255 by the IETF Standard (first/last 256 addresses)
+    - this is the backup in case a DHCP Server is inoperable
+    - automatically assigned, uses ARP to confirm the address isn't currently in use
+    - default subnet is 255.255.0.0, no gateway since can't communicate to router
