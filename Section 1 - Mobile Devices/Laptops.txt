@@ -1,0 +1,119 @@
+Laptops (Hardware):
+ - Some Laptops are easier to fix than others
+
+ - Batteries:
+    - Some are able to be modular and easily replaced while others require a teardown
+    - Usually use Lithium-Ion (Li-ion) and Lithium-Ion Polymer (Lipo)
+    - No "Memory Effect" so you can charge it up to full without  losing charge
+    - however charging it in general does diminish capacity
+    - Different form factor for each Laptops
+    - Battery Types and style can vary due to constantly changing 
+    
+ - Keyboard
+    - The mose used component, can be easy to replace with a few screws and single ribbon cable
+    - though it may not always be this simple
+    - You can always connect an external keyboard as well
+    - Keys:
+    -  can repair or replace a keycap, is a delicate procedure
+    -  Very easy to break caps or components underneath
+
+ - Memory 
+    - Uses Small Outline DUal in line Memory Module (So-DIMM)
+    - also used in mobile device, often easy to install and replace
+    - occasionally it's soldered to the system board, and if so there's no upgrade
+    - you'd have to do a full  board replacement to upgrade 
+
+ - Storage
+    - Magnetic disks, aka spinning drive platters (HDD) usually in 2.5 inch FF
+    - SSD, Solid state drive, all memory and no moving parts, 2.5 inch FF, less latency then HDD
+    - M.2 , smaller form factor that doesn't use sata or power cables, easy to install and replace
+    - Usually really easy to replace all of these parts, typically all internal
+    - Open the cover or whole laptop, typically modular with a couple of screws
+    - M.2's are even easier with only one screw and similar to a ram install
+    - Migrating HDD to SSD is a huge jump , especally if you instal the OS on the SSD
+    - though you may need specialized Hardware to clone the   drive
+    - sometimes included with the SSD
+    - You can either create the image file one drive at a time, or a drive-to-drive image
+
+ - 802.11 wireless and bluetooth:
+    - 802.11 Allows LAN Access to the internet, it's the standard. 
+    - Bluetooth is a PAN that's short range, usually used for peripherals and other nearby devices                     
+    - Typically connnects to the motherboard using either Mini PCI or Mini PCI Express
+
+ - Biometrics
+    - Some laptops have a way to sign in with fingerprint reader or face recognition
+    - Requires additional config in the OS, and usually requires some type of Hardware
+    - such as webcam, or fingerprint scanner. Relatively secure
+
+ - NFC : Near Field Communiation
+    - Usually 4 centimeters or less, used for data transfer and authentication
+    - Common on mobile phones and smart watches
+    - can use for authentication without putting in a password
+
+ - WebCam : Video Capture
+    - Built in Camera, sometimes mic, usually includes both auio and video drivers and software
+
+ - Microphones :
+    - Built in to the laptop display, Not good for casual use
+    - Buy a USB  mic for better quality
+   
+Laptop / Mobile Displays:
+ - When talking about Laptops, they usually have multiple antennas
+ - Wifi, aux, bluetooth, and  more. 
+ - the antennas  wires wraps around the laptop screen
+
+ - Portable LCD: Liquid Crystal Displays
+    - Light shines through liquid crystals. 
+    - lightweight, relatively low power, and relatively inexpensive
+    - Blacklight levels are a challenge, and it requires a seperarate Blacklight
+    - the lights are difficult to replace, blackllights usually florescent, or LED
+
+ - LCD Technologies
+    - TN: Twisted Nematic LCD
+       - Original LCD tech, it has fast response times but poor viewing angles and color shifts
+
+    - IPS (In Plane Switchng) LCD
+       - Excellent Color Representation, More Expensive to produce than TN
+   
+    - VA (Vertical Alignment) LCD
+       - Good color Representation but slower response times than TN
+       - Good  compromise between TN and IPS
+
+ - OLED : Organic Light Emitting Diode
+    - the Organic Compound emits light when receivin an electric current
+    - It's thinner and lighter, flexible and mobile - No glass needed
+    - No backlight, the Organic Compound Provides the Light
+    - Very Accurate color representation but higher cost than LCD
+    - Tablets, phones, Smartwatches, and more use OLED typically
+
+ - Florescent vs LED  blackllights
+    - CCFL : Cold Cathode Fluorescent Lamp
+       - Higher Voltage  and power needed with an added thickness to the display
+       - NO longer a common backlight, older laptops use this
+   
+    - LED backlit LCD display
+       - Backlight is LEDs instead of florescent, LEDs around the edge of screen
+       - An array of LEDs behind the screen, and latest laptops are LED backlit
+
+    - LCD displays need a backlight, but need different powers to do so
+    - Some laptops have inverters to turn DC into Access
+    - to verify a backlight, look closely and use a flashlight. 
+    - if {Redacted, come back}
+    - May need to replace LCD inverter or display
+
+Ways to access:
+
+ - Digitizers: Pen like device as input using stylus, useful for graphical input
+    - You usually need a display that supports it
+    - Used commonly on laptop/tablets or hybrid devices
+
+ - Touchscreen:
+    - Merge laptop and tablet input, no keyboard required but often available
+    - the digitzer responds to touch
+
+
+
+- Miscelanneous Terms:
+    - FF = Form factor
+    - LAN = Local Area Network
+    - PAN = Personal Area Network
