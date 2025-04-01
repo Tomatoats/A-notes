@@ -1,11 +1,98 @@
-- Todo: The rest of the notes Converted
+Connectors:
+    - USB with Micro USB, USB B, USB Type A, B, C
+    - USB is hardware but can input many signals such as displayport
+    - Lightning for apple, can be put in either way
+    - Before USB, DB-9 (DE-9) was used that uses RS-232 signals
+    - those DB-9 are still used for older switches or routers
+    - NFC - NEar field communication
+    - used for access token, identity card, payment
+    - Bluetooth is known, as well as hotspot
+    
+Peripherals: 
+
+     - Touch Pen / capacitive stylus : activate interface without actually touching the device with fingers
+         - Good for handwriting and signatures
+
+     - Active Stylus / Digital Stylus : a More precise stylus compared to the pen, usually for artistry
+         - stylus communicates directly to the device, and must be compatible with the tablet
+
+     - Drawing Pad : uses an active stylus with an external Digitizers
+         - Third party Device typically
+
+     - Trackpad : replaces the mouse, usually on laptops, though there is an external trackpad that is battery powered
+         - Can enable and disable trackpad
+
+     - Handsets : whether Wireless or wired (through a 3.5 mm jack called TRRS (Tip ring ring sleeve))
+
+     - Speakers : Typically battery powered and bluetooth, with better speakers than your phones
+
+     - Docking Station : Put laptop into it and your external devices connect to docking stations
+
+     - Port Replicator : Like a Docking Station but you connect laptop via USB C (think work )
+
+Cellular Networks:
+     - Called that because  they seperate land into ~hexagonal cells
+     - Antenna coverages a cell with certain frequencies
+
+     - First Were called 2G Networks
+         - Split into GSM : GLobal System for Mobile Communications
+             - 90% of the Market, originally EU Standard but had worldwide coverages
+             - Used by AT&T and T-Mobile in the US, could move SIM card (subscriber Identity Module) from phone to phone
+             - Used Multiplexing, everyone got a little slice of time
+         - and CDMA: Code Division Multiple Access
+             - Could have everyone communicate at the same time, but each call uses a different Code
+             - code are used to filter each call ont he receiving specialized
+             - used by Verizon and Sprint, handsets are controlled by the network provider but wasn't mass adopted
+        - Poor data support, circuit switching
+
+     - 3G Network - in 1998
+         - Upgraded Data connectivity over 2g, several mbps (megabit/second)
+         - Bandwith improvement allowed GPS, Mobile TV, video on demand, and more data usage
+
+     - 4G (LTE) : Long Term Evolution
+         - Coverged the GSM and CDMA Providers
+         - Based on GSM and EDGE (Enhanced data rates for GSM Evolution)
+         - supports download up to 150 Mbit/s
+        
+         - LTE-A (LTE Advanced) Can go up to 300 Mbit/s
+     
+     - 5G - made in 2020
+         - At hgiher frequencies we can hit 10 Gbit/s
+         - though typically slow speeds at 100-900 Mbit/s 
+         - Significant IoT impact, bandwith became less of  constraint
+         - Alows for larger data transfer and monitoring / notifications
+
+     - PRL (Preferred Roaming List)
+         - Used in CDMA NEtworks (Verizon, Sprint)
+         - Allows your phone to connect to the right tower, can be updated over the air (OTA)
+
+gps : Global Positioning System
+     - Created by the U.S Department of Defense, Over 30 satellites currently in orbit
+     - Precise Navigation, calculates via at least 4 satellites
+     - Determines locations based on timing differences (longitude, latitude, altitude)
+     - Mobile Device location services use geotracking (for maps, directions)
+     - can determine physical location based on GPS, Wifi, and cellular towers
+
+
 
 - Mobile Configurations:
-    - iCloud
-    - Can choose to customize and synchronize
-    - Can Synchronize multiple Data types (i.e mail, pictures, contacts)
-    - There's data caps and transfer Costs
+     - iCloud
+     - Can choose to customize and synchronize
+     - Can Synchronize multiple Data types (i.e mail, pictures, contacts)
+     - There's data caps and transfer Costs
 
+     - MDM - Mobile Device Management
+         - Allows to manage both company owned and user owned devices, using BYOD - bring your own device
+         - think MobileIron, allows centralized managment of the mobile devices with specialized functionality
+         - You can set policies on apps, data, camera, etc. can either control the whole device or only a partition
+         - Manage Access controls to force screen locks and PIN's 
+         - Corporate email configurations can be pushed by the MDM
+         - also can add two-factor authentication 
+         - can also restrict or allow certain apps to prevent unauthorized app usage
+    
+     - Can Synchronize Cloud Services
+     - Can send, recieve, and manage email, notes, calendars, and more via these cloud services
+     - though there are configurations for data / transfers costs
 
 
 
