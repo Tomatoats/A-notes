@@ -1,0 +1,69 @@
+DNS: Domain Name systems
+     - Translate the urls we know to IP Addresses
+     - Many DNS servers, 13 root server Clusters and  over 1000 actual servers
+     - hundreds of generic top-level domains (gTLDs) - .com, .org, .net, etc
+     - Over 275 country code top-level domains (ccTLDs) - .us, .uk, .ca, etc
+
+     - hierarchy: 
+         - first: the humble . (to let you know the domain name is done)
+         - then first tier TLD will be .com, .net, .edu, .org
+         - specialized Domains like the website name (github) or .professormesser would be on the next tier down
+         - then www would be the tier below that, as well as stuff like mail or live instead of www
+    
+     - Could use dig or nslookup command and then url i.e dig alexys.online and you can see iP addresses
+     - DNS has a lot of Resource Records (RR)  to hold domain name Services
+     - Over 30 Record types , i.e IP ddresses, certificates, host alias names, etc
+     - Very important and critical configs, make sure to check settings, backup, and testing
+     - DNS Configs usually a text file or plain text that show names, certs, aliases, and IP'same
+     - might also have a web based config
+
+     - Resource Records:
+        
+         - Adress Records: (A) or (AAAA)
+             - Defines the IP Address od a host, and most popular query
+             - A records are for IPv4 addresses, and AAAA records are for IPv6 addresses
+             - Modify the records to change the host name or IP Address resolution
+        
+         - Mail Exchaner Record (MX)
+             - Determines the host name for the mail server, which isn't an IP Address, but a name
+             - to obtain the IP, check the A 
+
+         - Text Record (TXT)
+             - Human readable text information 
+             - Useful public info that was originally designed for informal info
+             - Can be used for verifcation purposes
+             - if you have access to the DNS, you must be admin of the domain
+             - Commonly used for email security, since external email servers validate info from your DNS
+             - can see some of these records using dig <url> TXT or nslookup -type=txt <url> 
+
+         - Sender Policy Framework  (SPF) :
+             - SPF Protocol : A list of all servers authorized to send emails to the domain, helps prevent mail spoofing
+             - Mail servers perform a check to see if incoming mail really did come from an authorized host
+        
+         - Domain Keys Identified Mail (DKIM) : 
+             - Digitally sign a domain's outgoing mail
+             - The Public key is in the DKIM TXT record
+         
+         - DMARC : Domain-based message Authentication, Reporting, and Confermance
+             - Prevent Unauthorized email use (spoof) , an extension of SPF and DKIM
+             - Can decide what external email servers should do with emails that don't validate through SPF or DKIM
+             - Policy is written to a DMARC TXT record
+             - Accept all, send spam, reject email
+             - Compliance reports to be sent to email admin
+
+DHCP: Dynamic Host Configuration Protocol
+     - Scope Properties : IP Address range, subnet masks, lease durations, DNS Server, gateway, and VoiP
+     - DHCP Pools Groups of IP adresses, and each subnet has its own scope like 192.168.1.0/24
+     - A scope is generally a single continguous pool of IP addresses, but DHCP Exceptions can be made inside of the scope
+     - DHCP has a big pool of addresses to lease for x amount of time, and then are reclaimed
+     - Many DHCP assign automatically, and DHCP server keeps a list of past assignments so you can get the same IP address if you were on recently
+     - can always reserve an address, which has to be done with admin countrols, and uses MAC address
+     - might be called static dhcp assignment, static dhcp, static assignment, or ip reservation 
+     - DHCP Leases are temporary, could allocate or reallocate via rebooting computer
+     - can also manually release an IP Address
+     - T1 Timer checks halfway through the Lending DHCP server to tell DHCP server you still want your IP
+     - T2 timer , if original DHCP server is down, it tries to rebind to another DHCP server, and at 7/8ths of the lease time
+     
+
+Miscellaneous :
+     - TTL : Time to Live , how long the info for a record to stay in cache in the DNS

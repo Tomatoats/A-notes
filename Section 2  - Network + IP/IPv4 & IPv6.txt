@@ -45,3 +45,5 @@ Assigning IP Addresses (DHCP  / APIPA)
     - this is the backup in case a DHCP Server is inoperable
     - automatically assigned, uses ARP to confirm the address isn't currently in use
     - default subnet is 255.255.0.0, no gateway since can't communicate to router
+
+
