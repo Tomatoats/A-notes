@@ -65,5 +65,18 @@ DHCP: Dynamic Host Configuration Protocol
      - T2 timer , if original DHCP server is down, it tries to rebind to another DHCP server, and at 7/8ths of the lease time
      
 
+VLAN : Virtual LAN
+     - Local Areal Networks : a group of devices in the same broadcast domain
+     - Vlan  Allows us to seperate interfaces to different networks without having to buy a new switch
+     
+VPN : Virtual Private network
+     - Encrypted (private) data traversing a public network
+     - Connects to A concentrator, Encryption/decryption access device often integrated into a firewall
+     - Many deployment options , from specialized cryptographic hardware or software
+     - Used with client software but sometimes built into the OS
+     - Can use client to site VPN for on demand access from a remote device using software
+     - with that software connecting to a vpn concentrator
+     - and some software can be configured to always be on
+
 Miscellaneous :
      - TTL : Time to Live , how long the info for a record to stay in cache in the DNS

@@ -1,0 +1,65 @@
+Sattelite Networking:
+     - Non terrestrial communication with high cost compared to terrestrial
+     - 50 mbit/s down, 3 mbit/s up are common.
+     - usually used for remote, difficult to network sites
+     - high latency, around 250 ms up and down
+     - though starlink advertises 40 ms and working toward 20 ms
+     - high frequencies, of 2 ghz, operate over line of sight, so rain can mess it up (rain fade)
+
+Fiber:
+     - High speed data communication that uses frequencies of light
+     - higher installation cost than copper , more difficult to repair
+     - but can communicate over long distances
+     - large installation in the WAN core, supports very  high data rates
+     - uses SONET , wavelength division multiplexing
+     - Fiber is slowly being widely adopted for both business and home use
+
+Cable Broadband:
+     - Transmission accross multiple frequencies using COAX Cable
+     - different traffic types using data on the Cable network
+     - DOCSIS : Data over Cable Service Interfcace Specification
+     - High speeds, from 50 Mbit/s through 1000+Mbit/s 
+     
+DSL: Digital Subscriber line:"
+     - Uses the Telephone line
+     - Usually ADSL (Asymmetric) because download speed is faster than the upload speed
+     - 200 Mbit/s downstream , 20 Mbit/s upstream
+     - ~10,000 ft limitation from the central office (CO), faster speeds closer to CO
+
+Cellular Network:
+     - Can use our phone as a internet connection by Tethering or mobile hotspot
+
+WISP : Wireless Internet Service Provider:
+     - Terrestrial internet access using wireless
+     - Connect rural or remote locations
+     - may use meshed 802.11, 5G home internet, or propiarty wireless
+     - speeds can range from 10 to 1000 mbit/s
+    
+LAN : Local Area Network
+     - While Local is relative (building or group of buildings), they provide high speed connectivitiy
+     - typically uses ethernet and 802.11 wireless. Any slower and it isn't 'local' 
+
+WAN : Wide Area Network
+     - Spanning the Globe, generally connects LAN accross a distance, and thus much slower
+     - Many different WAN Techs from point-to-point serial, MPLS, etc, and can be terrestrial or no terrestrial
+     - MPLS : Multiprotocol Label switching, a routing technique to firect data from one node to the next using labels
+
+
+PAN: Personal Area Network
+     - Your own private network, with stuff like bluetooth, IR, NFC
+     - used in automobiles for audio output , integrated with phones. 
+     - used in health, wireless headsets, etc etc
+
+MAN : Metropolitan Area Network
+     - A network in your city that's larger than a LAN but smaller than a WAN
+     - Historically MAN-specific topologies, but Metro Ethernet is the most common
+     - Common to see government ownership as they 'own' the right-of-way
+
+SAN : Storage Area Network
+     - Looks and feels like a local storage device with Block-level access (very efficient to read and write)
+     - Requires a lot of bandwith, may use an isolated network and high speed topology
+
+WLAN : Wireless LAN
+     - think 802.11 (wifi) Techs
+     - has good Mobility within buildings or geographical areas
+     - You can expand coverage with additional access points for a large campus for example
